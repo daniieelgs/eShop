@@ -1,0 +1,193 @@
+.title-shopping{
+    text-align: center;
+    margin-top: calc(var(--header-height) + 30px);
+    margin-bottom: 30px;
+}
+
+.shopping-container{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 50px;
+
+}
+
+.shopping-container .item-buy{
+    display: flex;
+    gap: 10px;
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    width: 75%;
+    border: 2px solid #000;
+    background-color: #d7a86e;
+    border-radius: 10px;
+    padding: 10px;
+
+    position: relative;
+
+}
+
+.shopping-container .item-buy .image-product{
+    width: 150px;
+    height: 150px;
+}
+
+.shopping-container .item-buy .item-info{
+
+    display: grid;
+
+    align-items: center;
+
+    grid-template-areas: 
+    "name name price"
+    "count total total";
+
+    grid-template-rows: 1fr 1fr;
+
+    width: 100%;
+
+    margin-top: 16px;
+
+}
+
+.shopping-container .item-buy .item-info .item-name{
+    grid-area: name;
+}
+
+.shopping-container .item-buy .item-info .item-name a{
+    color: inherit;
+}
+
+.shopping-container .item-buy .item-info .item-name a:hover{
+    color: rgb(52, 119, 196);
+}
+
+.shopping-container .item-buy .item-info .item-price{
+    grid-area: price;
+    text-align: end;
+}
+
+.shopping-container .item-buy .item-info .item-count{
+    grid-area: count;
+}
+
+.shopping-container .item-buy .item-info .item-count label{
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+.shopping-container .item-buy .item-info .item-count button[type="submit"]{
+    border-radius: 15px;
+    background-color: rgb(97, 236, 97);
+    border: none;
+    padding: 2px 8px;
+    transition: all linear .2s;
+}
+
+.shopping-container .item-buy .item-info .item-count button[type="submit"]:hover{
+    background-color: rgb(66, 214, 66);
+}
+
+.shopping-container .item-buy .item-info .item-total{
+    grid-area: total;
+    text-align: end;
+}
+
+#item-count-value{
+    width: 40px;
+}
+
+#btn-delete-shopping{
+    width: max-content;
+    height: max-content;
+    background-color: transparent;
+    border: 0;
+    padding: 0;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+
+
+.buy-container{
+    position: sticky;
+    top: calc(var(--header-height) + 20px);
+    width: max-content;
+    height: max-content;
+    padding: 40px;
+    margin: 0;
+    margin-right: 20px;
+    border: 1px solid #000;
+    background-color: #e6e6e6;
+    border-radius: 20px;
+    box-shadow: 10px 10px 5px 0px rgba(194,194,194,1);
+}
+
+.buy-container form{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.buy-container form button[type="submit"] {
+
+    background-color: rgb(102, 211, 102);
+    border: 0;
+    border-radius: 20px;
+    padding: 15px;
+    width: 50%;
+    font-size: 1.3rem;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: all linear .2s;
+}
+
+.buy-container form button[type="submit"]:hover{
+    background-color: rgb(24, 199, 24);
+}
+
+form.data-buy{
+
+    margin: auto;
+
+    width: 50%;
+
+    font-size: 1.4rem;
+
+}
+
+form.data-buy input, form.data-buy select{
+
+    font-size: inherit;
+
+}
+
+.btn-plain-text{
+
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+
+    font-size: 1.1rem;
+
+    color: rgb(65, 128, 199);
+
+}
+
+.data-buy-container button.data-buy-submit{
+    margin: auto;
+    width: 50%;
+}
+
+.data-buy-container{
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+}
